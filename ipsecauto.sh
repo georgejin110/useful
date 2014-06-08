@@ -75,8 +75,8 @@ echo "now the fqdn is"
 echo $fqdn1
 echo "Saved."
 cd /etc/racoon/
-rm -rf ipsec.conf
-cat >ipsec.conf <<EOF
+rm -rf racoon.conf
+cat >racoon.conf <<EOF
 log info;
 path include "/etc/racoon";
 path pre_shared_key "/etc/racoon/psk.txt";
